@@ -1,1 +1,1 @@
-react query
+React query example
