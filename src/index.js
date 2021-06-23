@@ -1,9 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { QueryClientProvider } from "react-query";
+import { QueryClientProvider, QueryClient } from "react-query";
 import { ReactQueryDevtools } from "react-query/devtools";
 import App from "./App";
-import client from "./react-query-client";
+import "./App.css";
+
+const client = new QueryClient();
 
 ReactDOM.render(
   <QueryClientProvider client={client}>

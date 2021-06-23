@@ -1,0 +1,38 @@
+body {
+  font-size: 18px;
+  color: white;
+  margin: 0;
+}
+
+.App {
+  display: flex;
+  background-color: rgb(72 68 68);
+  height: 100vh;
+}
+
+.user-list {
+  padding: 24px;
+  border-right: 1px solid white;
+  margin: 0;
+}
+
+.user-details {
+  padding: 24px;
+  width: 100%;
+}
+
+.user-button {
+  display: flex;
+  padding: 10px;
+}
+
+.user-button li {
+  display: block;
+  overflow: auto;
+  width: 100px;
+  text-overflow: ellipsis;
+}
+
+.user-button button {
+  cursor: pointer;
+}

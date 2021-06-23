@@ -1,13 +1,21 @@
 import React, { useState } from "react";
-import { useQuery, useMutation } from "react-query";
+import Users from "./Components/Users/Users";
+import User from "./Components/Users/User";
 
-function App() {
-  // Main Component
+const App = () => {
+  const [userId, setUserId] = useState();
+
+  const handleSetId = (id) => {
+    console.log({ id });
+    setUserId(id);
+  };
+
   return (
     <div className="App">
-      <h2>React Query</h2>
+      <Users setUserId={handleSetId} />
+      <User id={userId} />
     </div>
   );
-}
+};
 
 export default App;
